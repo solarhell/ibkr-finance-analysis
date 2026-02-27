@@ -3,7 +3,6 @@ module github.com/solarhell/ibkr-finance-analysis
 go 1.26
 
 require (
-	github.com/solarhell/finance-analysis v0.0.0-20260227091614-6513a369e08a
 	github.com/spf13/cobra v1.10.2
 	github.com/spf13/viper v1.21.0
 )

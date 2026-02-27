@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/solarhell/finance-analysis/analysis"
-	"github.com/solarhell/finance-analysis/flex"
+	"github.com/solarhell/ibkr-finance-analysis/analysis"
+	"github.com/solarhell/ibkr-finance-analysis/flex"
 	"github.com/spf13/cobra"
 )
 

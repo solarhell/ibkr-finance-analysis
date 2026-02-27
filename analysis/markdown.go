@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/solarhell/finance-analysis/flex"
+	"github.com/solarhell/ibkr-finance-analysis/flex"
 )
 
 func GenerateMarkdownReport(statements []flex.FlexStatement, from, to string) string {

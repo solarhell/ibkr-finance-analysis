@@ -5,7 +5,7 @@ import (
 	"math"
 	"sort"
 
-	"github.com/solarhell/finance-analysis/flex"
+	"github.com/solarhell/ibkr-finance-analysis/flex"
 )
 
 type SymbolPnL struct {

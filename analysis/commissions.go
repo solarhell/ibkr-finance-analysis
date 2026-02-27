@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/solarhell/finance-analysis/flex"
+	"github.com/solarhell/ibkr-finance-analysis/flex"
 )
 
 type SymbolCommission struct {
