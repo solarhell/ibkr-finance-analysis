@@ -1,0 +1,18 @@
+# IBKR API 配置示例文件
+# 复制此文件为 config.toml 并填入你的实际信息
+
+# IBKR Personal Access Token
+# 从 IBKR Portal 获取: https://portal.ibkr.info/
+token = "your_personal_access_token_here"
+
+# 你的 IBKR 账户 ID
+account_id = "your_account_id_here"
+
+# 数据存储目录
+data_dir = "./data"
+
+# 查询配置
+[queries]
+# 交易数据查询 ID
+# 在 IBKR Portal 的 Flex 查询中创建查询并获取 ID
+trades = "your_query_id_here"  # AllData365 - 含 Trades、OpenPositions、CashReport、Transfers (365天)
