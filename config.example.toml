@@ -2,17 +2,35 @@
 # 复制此文件为 config.toml 并填入你的实际信息
 
 # IBKR Personal Access Token
-# 从 IBKR Portal 获取: https://portal.ibkr.info/
+# 获取方式:
+# 1. 访问 https://portal.ibkr.info/
+# 2. 进入 Settings -> Account Settings -> Access
+# 3. 点击 Create 生成新的 Token
+# 4. 复制生成的 Token 到下方
 token = "your_personal_access_token_here"
 
 # 你的 IBKR 账户 ID
-account_id = "your_account_id_here"
+# 格式类似: U1234567
+# 在 Account Summary 或账户管理页面可以找到
+account_id = "U1234567"
 
 # 数据存储目录
+# 用于存放拉取的 XML 数据和生成的报告
 data_dir = "./data"
 
-# 查询配置
+# Flex Query 配置
+# 在 https://www.interactivebrokers.com.hk/AccountManagement/AmAuthentication?action=FlexQueries 创建查询
 [queries]
-# 交易数据查询 ID
-# 在 IBKR Portal 的 Flex 查询中创建查询并获取 ID
-trades = "your_query_id_here"  # AllData365 - 含 Trades、OpenPositions、CashReport、Transfers (365天)
+# 查询名称和对应的 Query ID
+# Query ID 在创建查询后会显示（类似: 1417381）
+# 可以配置多个查询，根据需要命名
+
+# 示例: AllData365 查询（推荐配置）
+# 包含 Sections: Cash Report, Cash Transactions, Open Positions, Trades, Transfers
+# 时间范围: Last 365 Calendar Days
+# ⚠️ 格式必须选择 XML (不支持 CSV/JSON)
+trades = "1417381"  # 替换为你的 Query ID
+
+# 可以添加更多查询
+# dividends = "your_other_query_id"
+# monthly = "another_query_id"
